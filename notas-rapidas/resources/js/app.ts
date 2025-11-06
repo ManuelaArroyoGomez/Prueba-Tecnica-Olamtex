@@ -4,6 +4,9 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import type { DefineComponent } from 'vue';
 import { createApp, h } from 'vue';
+import NotesApp from './components/NotesApp.vue';
+
+createApp(NotesApp).mount('#app')
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 

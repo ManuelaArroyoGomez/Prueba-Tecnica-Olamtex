@@ -12,7 +12,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(\App\Models\Note::orderByDesc('id')->get());
     }
 
     /**
@@ -28,7 +28,14 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title'   => 'required|string|max:255',
+            'content' => 'required|string',
+        ]);
+
+        $note = Note::create($validated);
+
+        return response()->json($note, 201);
     }
 
     /**
@@ -52,7 +59,13 @@ class NoteController extends Controller
      */
     public function update(Request $request, Note $note)
     {
-        //
+        $validated = $request->validate([
+            'title'   => 'required|string|max:255',
+            'content' => 'required|string',
+        ]);
+
+        $note->update($validated);
+        return response()->json($note);
     }
 
     /**
@@ -60,6 +73,7 @@ class NoteController extends Controller
      */
     public function destroy(Note $note)
     {
-        //
+        $note->delete();
+        return response()->noContent();
     }
 }
