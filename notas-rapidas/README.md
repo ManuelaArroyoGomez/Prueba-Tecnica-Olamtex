@@ -36,6 +36,7 @@ npm run dev
 ## Backend (Laravel)
 
 ## Estructura
+```plaintext
 notas-rapidas/
 ├─ app/
 │  └─ Http/Controllers/NoteController.php
@@ -54,6 +55,7 @@ notas-rapidas/
 ├─ postcss.config.js
 ├─ vite.config.ts
 └─ README.md
+```
 
 # 2. Manipulación de listas y diccionarios
 - Python v3.12.6
