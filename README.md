@@ -33,8 +33,6 @@ php artisan serve
 npm run dev  
 ```
 
-## Backend (Laravel)
-
 ## Estructura
 
 ```plaintext
