@@ -20,7 +20,9 @@
 - Node v20.17.0 (para Vite/HMR)
 
 ```bash
+composer install
 php artisan key:generate
+type nul > database\database.sqlite
 php artisan migrate
 php artisan serve
 ```
@@ -28,8 +30,11 @@ php artisan serve
 3) Frontend (Vite + Vue):
 
 - Node v20.17.0 y npm v10.8.2
+  
+- Tailwind v4 + PostCSS
 
 ```bash
+npm install
 npm run dev  
 ```
 
