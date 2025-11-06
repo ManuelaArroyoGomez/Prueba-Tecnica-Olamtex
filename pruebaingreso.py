@@ -6,7 +6,6 @@ print("Lista inicial: ", numeros)
 
 #Lista de los numeros pares
 num_pares = []
-
 for n in numeros:
     if n % 2 == 0:
         num_pares.append(n)
@@ -25,4 +24,4 @@ diccionario = {}
 for n in numeros:
     diccionario[n] = n ** 2
 
-print("Diccionario de numero original: cuadrados:", diccionario)
+print("Diccionario:", diccionario)
