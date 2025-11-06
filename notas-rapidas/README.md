@@ -20,16 +20,18 @@
 - Node v20.17.0 (para Vite/HMR)
 
 ```bash
-cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
-
 ```
 
 3) Frontend (Vite + Vue):
 
 - Node v20.17.0 y npm v10.8.2
+
+```bash
+npm run dev  
+```
 
 ## Backend (Laravel)
 
