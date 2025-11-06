@@ -52,8 +52,7 @@ notas-rapidas/
 │  ├─ api.php
 │  └─ web.php
 ├─ postcss.config.js
-├─ vite.config.ts
-└─ README.md
+└─vite.config.ts
 ```
 
 # 2. Manipulación de listas y diccionarios
