@@ -35,6 +35,14 @@ php artisan migrate
 php artisan serve
 ```
 
+En .env debe quedar:
+
+```bash
+DB_CONNECTION=sqlite
+DB_DATABASE=./database/database.sqlite
+
+```
+
 3) Frontend (Vite + Vue):
 
 - Node v20.17.0 y npm v10.8.2
