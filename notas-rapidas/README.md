@@ -36,6 +36,7 @@ npm run dev
 ## Backend (Laravel)
 
 ## Estructura
+
 ```plaintext
 notas-rapidas/
 ├─ app/
