@@ -20,10 +20,18 @@
 - Node v20.17.0 (para Vite/HMR)
 
 ```bash
+# dentro de notas-rapidas/
 composer install
+cp .env.example .env
 php artisan key:generate
+
+# Base de datos SQLite
 type nul > database\database.sqlite
+
+# Migraciones
 php artisan migrate
+
+# Levantar API
 php artisan serve
 ```
 
@@ -34,8 +42,9 @@ php artisan serve
 - Tailwind v4 + PostCSS
 
 ```bash
+# en otra terminal también dentro de notas-rapidas/
 npm install
-npm run dev  
+npm run dev
 ```
 
 ## Estructura
