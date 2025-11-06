@@ -1,9 +1,12 @@
 #Lectura de archivos
 
+#Ruta absoluta del archivo para evitar errores de ruta
+import os
+ruta_archivo = os.path.join(os.path.dirname(__file__), "datos.txt")
+
 #Abrir el archivo en modo lectura
-archivo = open("datos.txt", "r")
-contenido = archivo.read()
-archivo.close()
+with open(ruta_archivo, "r", encoding="utf-8") as archivo:
+    contenido = archivo.read()
 
 print("Contenido del archivo:", contenido)
 
